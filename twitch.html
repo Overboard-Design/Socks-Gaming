@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitch</title>
+     <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta name="description" content="Wetsocks Clan Gaming Community">
+    <meta name="keywords" content="wet, socks, gaming, clan, guild, community, pvp, pve, pc, gamer, naval, action, call, of, duty, warframe
+    total, war, helldivers, twitch, stream, streamers, content, creators, youtube, Holdfast, payday, foxhole,">
+    <meta name="author" content="Overboard Design">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/325908507e.js" crossorigin="anonymous"></script>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+    </style>
+</head>
+<body>
+
+
+    <!-- Main Content -->
+
+    <div class="title">
+        <h1>Socks Live Streams</h1>
+    </div>
+    
+  <!-- Twitch Embed JS API -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+<style>
+  
+  .content {
+    text-align: center; /* Optional: center titles if you want */
+    margin-bottom: 40px;
+  }
+
+  .content .twitch-player {
+    width: 854px;
+    height: 480px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .content .twitch-player {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      height: auto;
+    }
+
+    .content .twitch-player iframe {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+</style>
+
+<!-- SubZer0 -->
+<div class="title">
+  <h2>SubZer0</h2>
+</div>
+<div class="content">
+  <div id="player-subzer0" class="twitch-player"></div>
+</div>
+
+<!-- Fiyahose -->
+<div class="title">
+  <h2>Fiyahose</h2>
+</div>
+<div class="content">
+  <div id="player-fiyahose" class="twitch-player"></div>
+</div>
+
+<!-- emberslodge -->
+<div class="title">
+  <h2>emberslodge</h2>
+</div>
+<div class="content">
+  <div id="player-emberslodge" class="twitch-player"></div>
+</div>
+
+<!-- kabbadon -->
+<div class="title">
+  <h2>kabbadon</h2>
+</div>
+<div class="content">
+  <div id="player-kabbadon" class="twitch-player"></div>
+</div>
+
+<!-- twrh_timmah -->
+<div class="title">
+  <h2>twrh_timmah</h2>
+</div>
+<div class="content">
+  <div id="player-timmah" class="twitch-player"></div>
+</div>
+
+<!-- JavaScript to Load Players -->
+<script type="text/javascript">
+  const parentDomain = "www.wetsocksgaming.com";
+
+  new Twitch.Player("player-subzer0", {
+    width: "100%",
+    height: "100%",
+    channel: "subzer02023",
+    parent: [parentDomain],
+    muted: true
+  });
+
+  new Twitch.Player("player-fiyahose", {
+    width: "100%",
+    height: "100%",
+    channel: "fiyahose",
+    parent: [parentDomain],
+    muted: true
+  });
+  
+
+  new Twitch.Player("player-emberslodge", {
+    width: "100%",
+    height: "100%",
+    channel: "emberslodge",
+    parent: [parentDomain],
+    muted: true
+  });
+
+  new Twitch.Player("player-kabbadon", {
+    width: "100%",
+    height: "100%",
+    channel: "kabbadon",
+    parent: [parentDomain],
+    muted: true
+  });
+
+  new Twitch.Player("player-timmah", {
+    width: "100%",
+    height: "100%",
+    channel: "twrh_timmah",
+    parent: [parentDomain],
+    muted: true
+  });
+</script>
+
+
+   <div class="menu-container">
+    <a href="index.html" class="menu-item">
+  <i class="fas fa-home"></i> Return to Homepage
+</a>
+</div>
+</div>
+<div>
+<footer>
+       By Overboard Design.
+</footer>
+</div> 
+</body>
+</html>
